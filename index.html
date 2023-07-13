@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <title>Quiz Time!</title>
+</head>
+
+<!--Main body of HTML-->
+<body>
+    <h1>JavaScript Fundamentals Quiz!</h1>
+    <section class="start-container">
+      <button class="start-btn">Start Quiz</button>
+    </section>
+    <section class="quiz-container" class="hide">
+      <h2 class="question-text"></h2>
+      <ul class="options-list"></ul>
+      <p class="feedback-text"></p>
+      <section class="timer">Time: <span class="time">0</span></section>
+    </section>
+
+    <!--End Container regarding scores, restart and clearing scores-->    
+    <section class="end-container" class="hide">
+        <h2>All done!</h2>
+        <p>Your final score is <span class="final-score"></span>.</p>
+        <form class="initials-form">
+          <label for="initials">Enter initials:</label>
+          <input type="text" class="initials" maxlength="2" required>
+          <button type="submit">Submit</button>
+        </form>
+        <section class="scores-container"></section>
+        <button class="clear-scores-btn">Clear Scores</button>
+        <button class="restart-btn">Restart Quiz</button>
+      </section>
+  
+      <!--Links JavaScript-->    
+      <script src="assets/js/script.js"></script>
+  </body>
+  </html>
